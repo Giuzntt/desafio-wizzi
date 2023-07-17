@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="w-full h-20 bg-blue-nav flex justify-center items-center">
+    <footer className="w-full h-30 bg-blue-nav flex justify-center items-center">
       <div
         className="container flex justify-between items-center mx-auto px-8
        "
