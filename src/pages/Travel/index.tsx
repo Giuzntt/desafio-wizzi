@@ -32,7 +32,7 @@ const Travel = () => {
           </h3>
           <HorizontalDivider className="w-full h-1 bg-white" />
 
-          <div className="flex justify-start items-center w-full  gap-3 sm:flex-col">
+          <div className="flex justify-start items-center w-full  gap-3 ">
             <div className="flex items-center justify-start gap-2">
               <LucideMapPin className="h-5 w-5 text-blue-nav" />
               <h3 className="text-2xl font-poppins text-gray-800 font-semibold text-start">
