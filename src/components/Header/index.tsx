@@ -62,17 +62,20 @@ const Header = () => {
           </div>
           {isMenuOpen && (
             <div className="absolute top-16 left-0 w-full h-28 bg-blue-nav z-50">
-              <div className="flex flex-col items-center justify-center h-full">
+              <div
+                className="flex flex-col items-center justify-center h-full
+               "
+              >
                 {navItem.map((item, index) => (
                   <Link
                     key={index}
                     href={item.link}
-                    className="text-white text-xl font-poppins hover:text-blue-200 transition duration-300 font-bold"
+                    className="text-white text-xl font-poppins hover:text-blue-200 transition duration-300 font-bold uppercase"
                   >
                     {item.name}
                   </Link>
                 ))}
-                <button className="bg-none hover:bg-blue-700 text-white font-poppins py-1 px-5 font-bold text-xl border-2 border-white transition duration-300 rounded-full">
+                <button className="bg-white hover:bg-blue-500 text-blue-nav font-poppins py-1  font-bold text-xl border-2 border-white transition duration-300 rounded-full w-[250px] mx-3  uppercase">
                   quero voar!
                 </button>
               </div>

@@ -1,6 +1,7 @@
 "use client";
 import { LucideStar, LucideTimer } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 interface CardSearchProps {
   price: string;
@@ -8,6 +9,7 @@ interface CardSearchProps {
   level?: string;
   src?: string;
   time?: string;
+  to?: string;
 }
 
 export default function CardSearch({
@@ -16,9 +18,13 @@ export default function CardSearch({
   level = "Iniciante",
   src = "/images/default-placeholder.png",
   time = "0",
+  to = "/",
 }: CardSearchProps) {
   return (
-    <a href="#" className="block rounded-lg p-4 shadow-sm shadow-indigo-100">
+    <Link
+      href={to}
+      className="block rounded-lg p-4 shadow-sm shadow-indigo-100"
+    >
       <Image
         alt="Home"
         src={src}
@@ -81,6 +87,6 @@ export default function CardSearch({
           </div>
         </div>
       </div>
-    </a>
+    </Link>
   );
 }
