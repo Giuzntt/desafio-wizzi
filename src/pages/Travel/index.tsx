@@ -17,7 +17,7 @@ const Travel = () => {
           <button
             className="bg-none hover:bg-blue-200 text-blue-nav font-poppins py-5 font-bold px-8 mt-8 rounded-full transition duration-300 uppercase"
             onClick={() => {
-              router.push("/")
+              router.push("/");
             }}
           >
             <span className="flex items-center justify-center">
@@ -32,7 +32,7 @@ const Travel = () => {
           </h3>
           <HorizontalDivider className="w-full h-1 bg-white" />
 
-          <div className="flex justify-start items-center w-full  gap-3">
+          <div className="flex justify-start items-center w-full  gap-3 sm:flex-col">
             <div className="flex items-center justify-start gap-2">
               <LucideMapPin className="h-5 w-5 text-blue-nav" />
               <h3 className="text-2xl font-poppins text-gray-800 font-semibold text-start">
@@ -99,7 +99,7 @@ const Travel = () => {
               <div className="p-4 mx-auto lg:max-w-7xl lg:p-0">
                 <ul
                   role="list"
-                  className="grid grid-cols-2 gap-4 list-none lg:grid-cols-3 lg:gap-12"
+                  className="grid grid-cols-1 gap-4 list-none lg:grid-cols-3 lg:gap-12 md:grid-cols-1"
                 >
                   <li>
                     <div>
@@ -108,7 +108,7 @@ const Travel = () => {
                         Solutions?
                       </p>
                     </div>
-                    <div className="mt-2 text-base text-gray-500">
+                    <div className="mt-2 text-base text-gray-500 text-justify">
                       A XPTO Financial Solutions valoriza a experiência,
                       qualificações e habilidades dos candidatos. Normalmente,
                       procuramos profissionais com formação acadêmica em áreas
@@ -129,7 +129,7 @@ const Travel = () => {
                         na XPTO Financial Solutions?
                       </p>
                     </div>
-                    <div className="mt-2 text-base text-gray-500">
+                    <div className="mt-2 text-base text-gray-500 text-justify">
                       Na XPTO Financial Solutions, valorizamos o desenvolvimento
                       profissional contínuo de nossos funcionários. Oferecemos
                       oportunidades de crescimento em várias áreas, incluindo
@@ -149,7 +149,7 @@ const Travel = () => {
                         Solutions?
                       </p>
                     </div>
-                    <div className="mt-2 text-base text-gray-500">
+                    <div className="mt-2 text-base text-gray-500 text-justify">
                       A cultura de trabalho na XPTO Financial Solutions é
                       baseada na colaboração, inovação e excelência. Fomentamos
                       um ambiente de trabalho dinâmico e inclusivo, onde as
@@ -169,7 +169,7 @@ const Travel = () => {
                         XPTO Financial Solutions?
                       </p>
                     </div>
-                    <div className="mt-2 text-base text-gray-500">
+                    <div className="mt-2 text-base text-gray-500 text-justify">
                       A XPTO Financial Solutions se preocupa com o bem-estar de
                       seus funcionários e oferece benefícios competitivos. Isso
                       pode incluir pacotes abrangentes de assistência médica e
@@ -186,7 +186,7 @@ const Travel = () => {
                         Solutions?
                       </p>
                     </div>
-                    <div className="mt-2 text-base text-gray-500">
+                    <div className="mt-2 text-base text-gray-500 text-justify">
                       Para se candidatar a uma vaga na XPTO Financial Solutions,
                       você pode visitar nosso site oficial e verificar se há
                       vagas disponíveis na seção de carreiras. Caso haja uma

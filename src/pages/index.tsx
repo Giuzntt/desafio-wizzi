@@ -28,6 +28,7 @@ import { format } from "date-fns";
 import { CalendarIcon } from "lucide-react";
 import { Calendar } from "@/components/ui/calendar";
 import { ptBR } from "date-fns/locale";
+import Head from "next/head";
 
 const formSchema = z.object({
   dataIda: z.date({
@@ -77,6 +78,9 @@ export default function Home() {
 
   return (
     <>
+      <Head>
+        <title>Partiu Ser Nômade - Encontre a sua próxima jornada</title>
+      </Head>
       <Banner />
 
       <section className="container mx-auto px-8">
@@ -343,9 +347,9 @@ export default function Home() {
 
       <section className="container mx-auto px-8">
         <h3 className="text-4xl font-poppins font-bold text-start text-blue-nav my-5">
-          Recomendados para{" "}
-          <span className="font-poppins font-bold text-blue-nav-light">
-            você!
+          Artigos sobre viagens e trabalho
+          <span className="font-poppins font-bold text-blue-nav-light ml-2">
+            remoto!
           </span>
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 w-full">
@@ -354,28 +358,28 @@ export default function Home() {
             date="2021-10-10"
             image="/images/sao-paulo.jpg"
             description="São Paulo é um município brasileiro, capital do estado homônimo e principal centro financeiro, corporativo e mercantil da América do Sul. É a cidade mais populosa do Brasil, do continente americano, da lusofonia e de todo o hemisfério sul."
-            to="/sao-paulo"
+            to="https://www.partiusernomade.com.br/2022/08/29/5-lugares-tranquilos-em-sao-paulo-para-trabalhar-remotamente/"
           />
           <Card
-            title="São Paulo"
+            title="Paris"
             date="2021-10-10"
             image="/images/sao-paulo.jpg"
             description="São Paulo é um município brasileiro, capital do estado homônimo e principal centro financeiro, corporativo e mercantil da América do Sul. É a cidade mais populosa do Brasil, do continente americano, da lusofonia e de todo o hemisfério sul."
-            to="/sao-paulo"
+            to="https://vagaspelomundo.com.br/carreira/trabalhar-em-paris/"
           />
           <Card
-            title="São Paulo"
+            title="New York"
+            date="2021-10-10"
+            image="/images/sao-paulo.jpg"
+            description="New York e o trabalho remoto"
+            to="https://www.folhape.com.br/economia/estados-unidos-confira-os-estados-com-maior-salario-medio/279382/"
+          />
+          <Card
+            title="Sydney"
             date="2021-10-10"
             image="/images/sao-paulo.jpg"
             description="São Paulo é um município brasileiro, capital do estado homônimo e principal centro financeiro, corporativo e mercantil da América do Sul. É a cidade mais populosa do Brasil, do continente americano, da lusofonia e de todo o hemisfério sul."
-            to="/sao-paulo"
-          />
-          <Card
-            title="São Paulo"
-            date="2021-10-10"
-            image="/images/sao-paulo.jpg"
-            description="São Paulo é um município brasileiro, capital do estado homônimo e principal centro financeiro, corporativo e mercantil da América do Sul. É a cidade mais populosa do Brasil, do continente americano, da lusofonia e de todo o hemisfério sul."
-            to="/sao-paulo"
+            to="https://vagaspelomundo.com.br/morar-fora/melhor-cidade-do-mundo-para-morar/"
           />
         </div>
       </section>

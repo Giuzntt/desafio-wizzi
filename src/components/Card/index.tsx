@@ -61,7 +61,8 @@ export const Card = ({ title, date, description, image, to }: CardProps) => {
         <Link
           href={to}
           title=""
-          className="inline-flex items-center justify-center pb-0.5 mt-5 text-base font-semibold text-blue-nav transition-all duration-200 border-b-2 border-transparent hover:border-red-600 focus:border-red-600"
+          className="inline-flex items-center justify-center pb-0.5 mt-5 text-base font-semibold text-blue-nav transition-all duration-200 border-b-2 border-transparent hover:border-blue-600 focus:border-blue-600"
+          target="_blank"
         >
           Ler mais...
         </Link>
