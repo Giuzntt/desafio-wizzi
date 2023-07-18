@@ -31,9 +31,9 @@ O objetivo do projeto Dev Journey é encontrar destinos inspiradores e enriquece
 ## Quais tecnologias foram utilizadas? 🤔
 
 <img  align="center" alt="Rafa-React" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg">
-    <!-- redux -->
 
-    <!-- typescript -->
+
+
 
 <img  align="center" alt="Rafa-Ts" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg">
     <!-- tailwind -->
