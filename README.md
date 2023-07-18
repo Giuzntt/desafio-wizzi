@@ -1,38 +1,67 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Desafio Processo Seletivo da Wizzi 🚀
 
-## Getting Started
+Deploy do projeto: [Aqui](https://desafio-wizzi-phi.vercel.app/)
 
-First, run the development server:
+## Sobre o Projeto Dev Journey
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+O objetivo do projeto Dev Journey é encontrar destinos inspiradores e enriquecedores para que desenvolvedores possam viajar e aprimorar suas carreiras. O projeto foi desenvolvido com ReactJS, Typescript, Tailwind CSS, Framer Motion e Redux.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## O que não gostei no projeto?
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+- A falta de uma API. Gosto muito de manipular API. Acredito que o projeto teria ficado mais completo com uma API.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## Quais Funcionalidades foram implementadas? 🤔
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- [x] Rotas com Next Router
+- [x] Rotas manipuladas com Next Router + Hooks
+- [x] [Figma](https://www.figma.com/file/mlEB1rRj9ybRyGR13wgVo6/Untitled?type=design&node-id=0%3A1&mode=design&t=7ozFnA90NhiO7JYF-1) para prototipação
+- [x] Tipagem com Typescript
+- [x] Componentização
+- [x] Uso de Hooks, Framer Motion e Tailwind CSS
+- [x] Listagem de todas as Viagens
+- [x] Eventos de Scroll
+- [x] Detalhes de cada vaga(Template s/ API)
+- [x] Responsividade para Mobile, nos valores md, sm, lg e xl. Seguindo o padrão do Tailwind CSS.
+- [x] Animações com Framer Motion
+- [x] Loading de carregamento
+- [x] Tratamento de erros
+- [x] Artigos relacionados
+- [x] Validação de formulário com Zod, Hook Form e Controle de Formulario. Datepicker dinamico.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Quais tecnologias foram utilizadas? 🤔
 
-## Learn More
+<img  align="center" alt="Rafa-React" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg">
+    <!-- redux -->
 
-To learn more about Next.js, take a look at the following resources:
+    <!-- typescript -->
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+<img  align="center" alt="Rafa-Ts" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg">
+    <!-- tailwind -->
+<img  align="center" alt="Rafa-Tailwind" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg">
+ <!-- framer-motion -->
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Como rodar o projeto? 🚀
 
-## Deploy on Vercel
+1. Deve ter o Node.JS instalado na sua máquina, caso não tenha, pode baixar [aqui](https://nodejs.org/en/). Versão >= 18.0.0
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+2. Tenha o gerenciador de pacotes NPM instalado na sua máquina, caso não tenha, pode baixar [aqui](https://www.npmjs.com/get-npm). Versão >= 6.14.0
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+3. Recomendo usar o gerenciador de pacotes Yarn, caso não tenha, pode baixar [aqui](https://classic.yarnpkg.com/en/docs/install/#windows-stable). Versão >= 1.22.0
+
+4. Clone o repositório na sua máquina, com o comando: `git clone https://github.com/Giuzntt/desafio-wizzi.git`
+
+5. Entre na pasta do projeto, com o comando: `cd Desafio-MindThru`
+
+6. Instale as dependências do projeto, com o comando: `yarn install` ou `npm install`
+
+7. Rode o projeto, com o comando: `yarn dev` ou `npm start`
+
+8. Acesse o projeto no seu navegador, com o link: `http://localhost:5173/`. Preste atenção no terminal, pois pode ser que a porta seja outra.
+
+## Quais bibliotecas auxiliares foram utilizadas?
+
+- [Zod](https://zod.dev/)
+- [React Hook Form](https://react-hook-form.com/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Frame Motion](https://www.framer.com/motion/)
+- [Lucide Icons](https://lucide.dev/)

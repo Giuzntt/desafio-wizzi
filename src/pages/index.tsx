@@ -79,7 +79,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Partiu Ser Nômade - Encontre a sua próxima jornada</title>
+        <title>DevJourney - Encontre a sua próxima jornada</title>
       </Head>
       <Banner />
 
