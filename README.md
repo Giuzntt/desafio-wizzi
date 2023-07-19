@@ -4,7 +4,7 @@ Deploy do projeto: [Aqui](https://desafio-wizzi-phi.vercel.app/)
 
 ## Sobre o Projeto Dev Journey
 
-O objetivo do projeto Dev Journey é encontrar destinos inspiradores e enriquecedores para que desenvolvedores possam viajar e aprimorar suas carreiras. O projeto foi desenvolvido com ReactJS, Typescript, Tailwind CSS, Framer Motion e Redux.
+O objetivo do projeto Dev Journey é encontrar destinos inspiradores e enriquecedores para que desenvolvedores possam viajar e aprimorar suas carreiras. O projeto foi desenvolvido com ReactJS, Typescript, Tailwind CSS, Framer Motion, React Hook Forme Zod.
 
 ## O que não gostei no projeto?
 
