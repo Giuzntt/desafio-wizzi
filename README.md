@@ -32,9 +32,6 @@ O objetivo do projeto Dev Journey é encontrar destinos inspiradores e enriquece
 
 <img  align="center" alt="Rafa-React" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg">
 
-
-
-
 <img  align="center" alt="Rafa-Ts" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg">
     <!-- tailwind -->
 <img  align="center" alt="Rafa-Tailwind" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg">
@@ -50,7 +47,7 @@ O objetivo do projeto Dev Journey é encontrar destinos inspiradores e enriquece
 
 4. Clone o repositório na sua máquina, com o comando: `git clone https://github.com/Giuzntt/desafio-wizzi.git`
 
-5. Entre na pasta do projeto, com o comando: `cd Desafio-MindThru`
+5. Entre na pasta do projeto, com o comando: `cd desafio-wizzi`
 
 6. Instale as dependências do projeto, com o comando: `yarn install` ou `npm install`
 

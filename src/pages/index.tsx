@@ -76,6 +76,12 @@ export default function Home() {
     alert(JSON.stringify(values, null, 2));
   }
 
+  // scroll animation to id
+  const scrollTo = (id: string) => {
+    const element = document.getElementById(id);
+    element?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <>
       <Head>
@@ -84,15 +90,16 @@ export default function Home() {
       <Banner />
 
       <section className="container mx-auto px-8">
-        <h3 className="text-4xl font-poppins font-bold text-start text-blue-nav my-5">
+        <h3
+          className="text-4xl font-poppins font-bold text-start text-blue-nav my-5"
+          id="journey"
+        >
           Encontre a sua próxima jornada
         </h3>
         <Form {...form}>
           <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 w-full ">
               <div className="col-span-4 md:col-span-2 lg:col-span-2">
-                {/* <DatePicker placeholder="Data de Ida" className="w-full" /> */}
-
                 <FormField
                   control={form.control}
                   name="dataIda"
@@ -139,7 +146,6 @@ export default function Home() {
                 />
               </div>
               <div className="col-span-4 md:col-span-2 lg:col-span-2">
-                {/* <DatePicker placeholder="Data de Volta" className="w-full" /> */}
                 <FormField
                   control={form.control}
                   name="dataVolta"
@@ -306,8 +312,6 @@ export default function Home() {
         </h3>
         <HorizontalDivider />
         <div className="flex flex-col flex-wrap justify-center items-center">
-          {/* // TODO: create card component  Horizontal*/}
-
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 w-full">
             <CardSearch
               location="Front-end Developer at São Paulo"
@@ -321,7 +325,7 @@ export default function Home() {
               location="Back-end Developer at New York"
               price="15000"
               level="Pleno"
-              src="https://images.unsplash.com/photo-1500916434205-0c77489c6cf7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80 387w, https://images.unsplash.com/photo-1500916434205-0c77489c6cf7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80 687w, https://images.unsplash.com/photo-1500916434205-0c77489c6cf7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80 774w, https://images.unsplash.com/photo-1500916434205-0c77489c6cf7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80 987w, https://images.unsplash.com/photo-1500916434205-0c77489c6cf7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1287&q=80 1287w, https://images.unsplash.com/photo-1500916434205-0c77489c6cf7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80 1374w, https://images.unsplash.com/photo-1500916434205-0c77489c6cf7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1587&q=80 1587w, https://images.unsplash.com/photo-1500916434205-0c77489c6cf7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80 1887w, https://images.unsplash.com/photo-1500916434205-0c77489c6cf7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80 1974w, https://images.unsplash.com/photo-1500916434205-0c77489c6cf7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2187&q=80 2187w, https://images.unsplash.com/photo-1500916434205-0c77489c6cf7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2487&q=80 2487w, https://images.unsplash.com/photo-1500916434205-0c77489c6cf7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2574&q=80 2574w, https://images.unsplash.com/photo-1500916434205-0c77489c6cf7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2787&q=80 2787w, https://images.unsplash.com/photo-1500916434205-0c77489c6cf7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3087&q=80 3087w, https://images.unsplash.com/photo-1500916434205-0c77489c6cf7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3094&q=80 3094w"
+              src="https://images.unsplash.com/photo-1500916434205-0c77489c6cf7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
               time="12"
               to="/Travel"
             />
@@ -356,15 +360,15 @@ export default function Home() {
           <Card
             title="São Paulo"
             date="2021-10-10"
-            image="/images/sao-paulo.jpg"
+            image="/images/default-placeholder.png"
             description="São Paulo é um município brasileiro, capital do estado homônimo e principal centro financeiro, corporativo e mercantil da América do Sul. É a cidade mais populosa do Brasil, do continente americano, da lusofonia e de todo o hemisfério sul."
             to="https://www.partiusernomade.com.br/2022/08/29/5-lugares-tranquilos-em-sao-paulo-para-trabalhar-remotamente/"
           />
           <Card
             title="Paris"
             date="2021-10-10"
-            image="/images/sao-paulo.jpg"
-            description="São Paulo é um município brasileiro, capital do estado homônimo e principal centro financeiro, corporativo e mercantil da América do Sul. É a cidade mais populosa do Brasil, do continente americano, da lusofonia e de todo o hemisfério sul."
+            image="/images/default-placeholder.png"
+            description="Paris e o trabalho remoto"
             to="https://vagaspelomundo.com.br/carreira/trabalhar-em-paris/"
           />
           <Card
@@ -377,7 +381,7 @@ export default function Home() {
           <Card
             title="Sydney"
             date="2021-10-10"
-            image="/images/sao-paulo.jpg"
+            image="/images/default-placeholder.png"
             description="São Paulo é um município brasileiro, capital do estado homônimo e principal centro financeiro, corporativo e mercantil da América do Sul. É a cidade mais populosa do Brasil, do continente americano, da lusofonia e de todo o hemisfério sul."
             to="https://vagaspelomundo.com.br/morar-fora/melhor-cidade-do-mundo-para-morar/"
           />

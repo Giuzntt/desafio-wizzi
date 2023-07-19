@@ -14,7 +14,7 @@ const Header = () => {
     },
     {
       name: "sobre nos",
-      link: "/about",
+      link: "/",
     },
   ];
 

@@ -95,6 +95,10 @@ export const Banner = () => {
   const handleIconClick = () => {
     setTextVisible((prevState) => !prevState);
   };
+  const scrollTo = (id: string) => {
+    const element = document.getElementById(id);
+    element?.scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
     <motion.section
@@ -136,7 +140,10 @@ export const Banner = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            onClick={handleIconClick}
+            onClick={() => {
+              scrollTo("journey");
+              handleIconClick();
+            }}
           >
             <motion.span className="flex items-center justify-center" layout>
               <motion.span
